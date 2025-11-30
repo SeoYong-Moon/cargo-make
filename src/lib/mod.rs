@@ -77,6 +77,7 @@ mod scriptengine;
 mod storage;
 mod time_summary;
 mod toolchain;
+pub mod validator;
 mod version;
 
 /// Handles the command line arguments and executes the runner.
