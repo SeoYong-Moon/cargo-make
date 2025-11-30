@@ -44,28 +44,3 @@ pub fn load() -> Result<GlobalConfig, CargoMakeError> {
         None => Ok(GlobalConfig::new()),
     }
 }
-
-/// Returns a default configuration instance.
-///
-/// This function creates and returns a new `GlobalConfig` with default values.
-/// The default configuration includes:
-/// - `search_project_root`: Set to `false`
-/// - All other fields: Set to `None` (not configured)
-///
-/// # Returns
-///
-/// Returns a `GlobalConfig` instance with default values.
-///
-/// # Examples
-///
-/// ```
-/// use cli::config::get_default_config;
-///
-/// let config = get_default_config();
-/// assert_eq!(config.search_project_root, Some(false));
-/// assert_eq!(config.log_level, None);
-/// assert_eq!(config.default_task_name, None);
-/// ```
-pub fn get_default_config() -> GlobalConfig {
-    GlobalConfig::new()
-}
