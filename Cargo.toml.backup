@@ -46,7 +46,6 @@ path = "src/makers.rs"
 [dependencies]
 cargo_metadata = "^0.19"
 ci_info = "^0.14.14"
-clap = "4.5.0"
 cliparser = "^0.1.2"
 colored = "^3"
 ctrlc = "^3"
